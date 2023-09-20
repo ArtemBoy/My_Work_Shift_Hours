@@ -1,0 +1,2392 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0805.0415                               -->
+<workbook original-version='18.1' source-build='2023.2.1 (20232.23.0805.0415)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='MyWorkShiftHours' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <style-rule element='all'>
+      <format attr='font-family' value='Tableau Bold' />
+      <format attr='color' value='#000000' />
+    </style-rule>
+  </style>
+  <datasources>
+    <datasource caption='Work_Shifts_Cleaned' inline='true' name='federated.19vakjj173cfgb16w597105f5cqv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Work_Shifts_Cleaned' name='textscan.0l4td5l0pqw6ix1ejdx9r1xqfin0'>
+            <connection class='textscan' directory='C:/Users/ighos/Downloads' filename='Work_Shifts_Cleaned.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0l4td5l0pqw6ix1ejdx9r1xqfin0' name='Work_Shifts_Cleaned.csv' table='[Work_Shifts_Cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='datetime' name='Shift Start' ordinal='1' />
+            <column datatype='datetime' name='Shift End' ordinal='2' />
+            <column datatype='real' name='Hours' ordinal='3' />
+            <column datatype='string' name='DoW' ordinal='4' />
+            <column datatype='date' name='Date' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0l4td5l0pqw6ix1ejdx9r1xqfin0' name='Work_Shifts_Cleaned.csv' table='[Work_Shifts_Cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='datetime' name='Shift Start' ordinal='1' />
+            <column datatype='datetime' name='Shift End' ordinal='2' />
+            <column datatype='real' name='Hours' ordinal='3' />
+            <column datatype='string' name='DoW' ordinal='4' />
+            <column datatype='date' name='Date' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Work_Shifts_Cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Work_Shifts_Cleaned.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_Shifts_Cleaned.csv_E87C7A7FD2CC43838AAE3AAD7ABAD839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shift Start</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Shift Start]</local-name>
+            <parent-name>[Work_Shifts_Cleaned.csv]</parent-name>
+            <remote-alias>Shift Start</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_Shifts_Cleaned.csv_E87C7A7FD2CC43838AAE3AAD7ABAD839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shift End</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Shift End]</local-name>
+            <parent-name>[Work_Shifts_Cleaned.csv]</parent-name>
+            <remote-alias>Shift End</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_Shifts_Cleaned.csv_E87C7A7FD2CC43838AAE3AAD7ABAD839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Hours]</local-name>
+            <parent-name>[Work_Shifts_Cleaned.csv]</parent-name>
+            <remote-alias>Hours</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_Shifts_Cleaned.csv_E87C7A7FD2CC43838AAE3AAD7ABAD839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DoW</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DoW]</local-name>
+            <parent-name>[Work_Shifts_Cleaned.csv]</parent-name>
+            <remote-alias>DoW</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_Shifts_Cleaned.csv_E87C7A7FD2CC43838AAE3AAD7ABAD839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Work_Shifts_Cleaned.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_Shifts_Cleaned.csv_E87C7A7FD2CC43838AAE3AAD7ABAD839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='DoW_Num' datatype='integer' name='[Calculation_-9086856609092186109]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='ISOWEEKDAY([Date])' />
+      </column>
+      <column caption='Shift_Length' datatype='real' name='[Calculation_-9086856609095380991]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT(DATEDIFF(&apos;minute&apos;, [Shift Start], [Shift End], &apos;sunday&apos;))/60' />
+      </column>
+      <column caption='DoW_Full' datatype='string' name='[Calculation_-9086856609095557120]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='DATENAME(&apos;weekday&apos;, [Date], &apos;sunday&apos;)' />
+      </column>
+      <column caption='Max_Min' datatype='string' name='[Calculation_6540352623231541249]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='IF WINDOW_MAX(AVG([Calculation_-9086856609095380991])) = AVG([Calculation_-9086856609095380991]) THEN &apos;Max&apos;&#13;&#10;ELSEIF WINDOW_MIN(AVG([Calculation_-9086856609095380991])) = AVG([Calculation_-9086856609095380991]) THEN &apos;Min&apos;&#13;&#10;END'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+      <column datatype='string' hidden='true' name='[DoW]' role='dimension' type='nominal' />
+      <column datatype='integer' hidden='true' name='[F1]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[Hours]' role='measure' type='quantitative' />
+      <column caption='Max_Min_Sum' datatype='string' name='[Max_Min (copy)_8559091156954435584]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='IF WINDOW_MAX(SUM([Calculation_-9086856609095380991])) = SUM([Calculation_-9086856609095380991]) THEN &apos;Max&apos;&#13;&#10;ELSEIF WINDOW_MIN(SUM([Calculation_-9086856609095380991])) = SUM([Calculation_-9086856609095380991]) THEN &apos;Min&apos;&#13;&#10;END'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column aggregation='None' datatype='integer' name='[Shift_Length (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[Calculation_-9086856609095380991]' peg='0' size='1.59' />
+      </column>
+      <column aggregation='Sum' caption='Shift_Length (copy)' datatype='real' name='[Shift_Length (copy)_8980177722340745216]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='FLOAT(DATEDIFF(&apos;minute&apos;, [Shift Start], [Shift End], &apos;sunday&apos;))/60' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Work_Shifts_Cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[Work_Shifts_Cleaned.csv_E87C7A7FD2CC43838AAE3AAD7ABAD839]' role='measure' type='quantitative' />
+      <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Calculation_-9086856609095557120]' derivation='None' name='[none:Calculation_-9086856609095557120:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_6540352623231541249]' derivation='User' name='[usr:Calculation_6540352623231541249:nk:4]' pivot='key' type='nominal'>
+        <table-calc ordering-type='Columns' />
+      </column-instance>
+      <column-instance column='[Calculation_6540352623231541249]' derivation='User' name='[usr:Calculation_6540352623231541249:nk]' pivot='key' type='nominal'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Max_Min (copy)_8559091156954435584]' derivation='User' name='[usr:Max_Min (copy)_8559091156954435584:nk:2]' pivot='key' type='nominal'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Max_Min (copy)_8559091156954435584]' derivation='User' name='[usr:Max_Min (copy)_8559091156954435584:nk]' pivot='key' type='nominal'>
+        <table-calc ordering-type='Columns' />
+      </column-instance>
+      <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (DoW_Full)' hidden='true' name='[Action (DoW_Full)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_-9086856609095557120]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (MONTH(Date))' hidden='true' name='[Action (MONTH(Date))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[mn:Date:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (YEAR(Date))' hidden='true' name='[Action (YEAR(Date))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[yr:Date:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (YEAR(Date),MONTH(Date))' hidden='true' name='[Action (YEAR(Date),MONTH(Date))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[yr:Date:ok]' />
+          <groupfilter function='level-members' level='[mn:Date:ok]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/ighos/OneDrive/Documents/Portfolio/Shift Hours (Pandas + Tableau)/Work_Shifts_Cleaned.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='09/02/2023 07:14:03 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='Work_Shifts_Cleaned' increment-value='%null%' refresh-type='create' rows-inserted='1267' timestamp-start='2023-09-02 19:14:02.958' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Shift Start</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Shift Start]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Shift Start</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Work_Shifts_Cleaned.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1250</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_Shifts_Cleaned.csv_E87C7A7FD2CC43838AAE3AAD7ABAD839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Shift End</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Shift End]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Shift End</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Work_Shifts_Cleaned.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1267</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_Shifts_Cleaned.csv_E87C7A7FD2CC43838AAE3AAD7ABAD839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Work_Shifts_Cleaned.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1250</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Work_Shifts_Cleaned.csv_E87C7A7FD2CC43838AAE3AAD7ABAD839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_-9086856609095557120:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Monday&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Friday&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Thursday&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Sunday&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Wednesday&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Saturday&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Tuesday&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[usr:Calculation_6540352623231541249:nk:4]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Min&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Max&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[usr:Calculation_6540352623231541249:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Min&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Max&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[usr:Max_Min (copy)_8559091156954435584:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Min&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Max&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[usr:Max_Min (copy)_8559091156954435584:nk:2]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Min&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Max&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='F1' />
+        <field-sort-custom-order field='Shift Start' />
+        <field-sort-custom-order field='Shift End' />
+        <field-sort-custom-order field='Calculation_-9086856609095380991' />
+        <field-sort-custom-order field='Shift_Length (copy)_8980177722340745216' />
+        <field-sort-custom-order field='Hours' />
+        <field-sort-custom-order field='DoW' />
+        <field-sort-custom-order field='Date' />
+        <field-sort-custom-order field='Calculation_-9086856609092186109' />
+        <field-sort-custom-order field='Calculation_-9086856609095557120' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Work_Shifts_Cleaned.csv' id='Work_Shifts_Cleaned.csv_E87C7A7FD2CC43838AAE3AAD7ABAD839'>
+            <properties context=''>
+              <relation connection='textscan.0l4td5l0pqw6ix1ejdx9r1xqfin0' name='Work_Shifts_Cleaned.csv' table='[Work_Shifts_Cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='datetime' name='Shift Start' ordinal='1' />
+                  <column datatype='datetime' name='Shift End' ordinal='2' />
+                  <column datatype='real' name='Hours' ordinal='3' />
+                  <column datatype='string' name='DoW' ordinal='4' />
+                  <column datatype='date' name='Date' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action2_887044B9C5A54D69AD9E7C78A247A756]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='My Work Shift Hours' type='sheet' worksheet='Average Hours by Year' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Total Hours by Year' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='My Work Shift Hours' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action3_2B7A93E72E4E4F8FACEDD4A3A469C584]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='My Work Shift Hours' type='sheet' worksheet='Average Hours by Month' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Total Hours by Year' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='My Work Shift Hours' />
+      </command>
+    </action>
+    <action caption='Highlight1' name='[Action3_F84625B672D447BDAF1254CAB70126A4]'>
+      <activation auto-clear='true' type='on-hover' />
+      <source dashboard='My Work Shift Hours' type='sheet' worksheet='Heatmap' />
+      <command command='tsc:brush'>
+        <param name='exclude' value='Average Hours by Year,Average Hours by DoW,Average Hours by Month,Hours Distribution,Minimum Shift,Maximum Shift,Median Shift,Total Hours by Year' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='My Work Shift Hours' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Average Hours by DoW'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Hours by Day of Week</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Work_Shifts_Cleaned' name='federated.19vakjj173cfgb16w597105f5cqv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19vakjj173cfgb16w597105f5cqv'>
+            <column caption='DoW_Num' datatype='integer' name='[Calculation_-9086856609092186109]' role='measure' type='ordinal'>
+              <calculation class='tableau' formula='ISOWEEKDAY([Date])' />
+            </column>
+            <column caption='Shift_Length' datatype='real' name='[Calculation_-9086856609095380991]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(DATEDIFF(&apos;minute&apos;, [Shift Start], [Shift End], &apos;sunday&apos;))/60' />
+            </column>
+            <column caption='DoW_Full' datatype='string' name='[Calculation_-9086856609095557120]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='DATENAME(&apos;weekday&apos;, [Date], &apos;sunday&apos;)' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='datetime' name='[Shift End]' role='dimension' type='ordinal' />
+            <column datatype='datetime' name='[Shift Start]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_-9086856609095380991]' derivation='Avg' name='[avg:Calculation_-9086856609095380991:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_-9086856609092186109]' derivation='Min' name='[min:Calculation_-9086856609092186109:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_-9086856609095557120]' derivation='None' name='[none:Calculation_-9086856609095557120:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_-9086856609095380991]' derivation='Sum' name='[sum:Calculation_-9086856609095380991:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19vakjj173cfgb16w597105f5cqv].[Action (MONTH(Date))]'>
+            <groupfilter function='level-members' level='[mn:Date:ok]' user:ui-action-filter='[Action2_1D8833E131C441A1A4D5CA76D3DCD895]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.19vakjj173cfgb16w597105f5cqv].[Action (YEAR(Date))]'>
+            <groupfilter function='level-members' level='[yr:Date:ok]' user:ui-action-filter='[Action1_985DA9FEE0304CF2B57A64D5310494DD]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.19vakjj173cfgb16w597105f5cqv].[none:Calculation_-9086856609095557120:nk]' direction='ASC' using='[federated.19vakjj173cfgb16w597105f5cqv].[min:Calculation_-9086856609092186109:qk]' />
+          <filter class='categorical' column='[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]' filter-group='3'>
+            <groupfilter from='2019' function='range' level='[yr:Date:ok]' to='2022' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]</column>
+            <column>[federated.19vakjj173cfgb16w597105f5cqv].[Action (YEAR(Date))]</column>
+            <column>[federated.19vakjj173cfgb16w597105f5cqv].[Action (MONTH(Date))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='width' field='[federated.19vakjj173cfgb16w597105f5cqv].[none:Calculation_-9086856609095557120:nk]' value='127' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' reverse='true' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#f46a1b</color>
+                <color>#ee8244</color>
+                <color>#e99a6c</color>
+                <color>#e3b092</color>
+                <color>#dec5b6</color>
+                <color>#d9d9d9</color>
+                <color>#b8c3cf</color>
+                <color>#9bafc5</color>
+                <color>#7f9cbb</color>
+                <color>#6589b1</color>
+                <color>#4e79a7</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' />
+              <text column='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' />
+              <lod column='[federated.19vakjj173cfgb16w597105f5cqv].[sum:Calculation_-9086856609095380991:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878' fontsize='14'>Day of Week: </run>
+                <run bold='true' fontsize='14'><![CDATA[<[federated.19vakjj173cfgb16w597105f5cqv].[none:Calculation_-9086856609095557120:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontsize='14'>Avg. Shift Hours: </run>
+                <run bold='true' fontsize='14'><![CDATA[<[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontsize='14'>Total Hours: </run>
+                <run fontsize='14'><![CDATA[<[federated.19vakjj173cfgb16w597105f5cqv].[sum:Calculation_-9086856609095380991:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-transparency' value='196' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]</rows>
+        <cols>[federated.19vakjj173cfgb16w597105f5cqv].[none:Calculation_-9086856609095557120:nk]</cols>
+      </table>
+      <simple-id uuid='{CF527434-334E-4B96-BD6C-577446498281}' />
+    </worksheet>
+    <worksheet name='Average Hours by Month'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Hours by Month</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Work_Shifts_Cleaned' name='federated.19vakjj173cfgb16w597105f5cqv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19vakjj173cfgb16w597105f5cqv'>
+            <column caption='Shift_Length' datatype='real' name='[Calculation_-9086856609095380991]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(DATEDIFF(&apos;minute&apos;, [Shift Start], [Shift End], &apos;sunday&apos;))/60' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='datetime' name='[Shift End]' role='dimension' type='ordinal' />
+            <column datatype='datetime' name='[Shift Start]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_-9086856609095380991]' derivation='Avg' name='[avg:Calculation_-9086856609095380991:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_-9086856609095380991]' derivation='Sum' name='[sum:Calculation_-9086856609095380991:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19vakjj173cfgb16w597105f5cqv].[Action (YEAR(Date))]'>
+            <groupfilter function='level-members' level='[yr:Date:ok]' user:ui-action-filter='[Action2_F54CA2AF8028442D95BE3CE6245DB3F3]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]' filter-group='3'>
+            <groupfilter from='2019' function='range' level='[yr:Date:ok]' to='2022' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]</column>
+            <column>[federated.19vakjj173cfgb16w597105f5cqv].[Action (YEAR(Date))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+            <format attr='text-format' field='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.19vakjj173cfgb16w597105f5cqv].[mn:Date:ok]' value='false' />
+            <format attr='text-align' scope='rows' value='center' />
+            <format attr='font-family' field='[federated.19vakjj173cfgb16w597105f5cqv].[mn:Date:ok]' value='Arial' />
+            <format attr='font-size' field='[federated.19vakjj173cfgb16w597105f5cqv].[mn:Date:ok]' value='16' />
+            <format attr='text-format' field='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#4e79a7</color>
+                <color>#6589b1</color>
+                <color>#7f9cbb</color>
+                <color>#9bafc5</color>
+                <color>#b8c3cf</color>
+                <color>#d9d9d9</color>
+                <color>#dec5b6</color>
+                <color>#e3b092</color>
+                <color>#e99a6c</color>
+                <color>#ee8244</color>
+                <color>#f46a1b</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='div-level' scope='rows' value='0' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' />
+              <text column='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' />
+              <lod column='[federated.19vakjj173cfgb16w597105f5cqv].[sum:Calculation_-9086856609095380991:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878' fontsize='14'>Month:&#9;</run>
+                <run bold='true' fontsize='14'><![CDATA[<[federated.19vakjj173cfgb16w597105f5cqv].[mn:Date:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#787878' fontsize='14'>Total Hours: </run>
+                <run bold='true' fontsize='14'><![CDATA[<[federated.19vakjj173cfgb16w597105f5cqv].[sum:Calculation_-9086856609095380991:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontsize='14'>Avg. Shift Hours: </run>
+                <run fontsize='14'><![CDATA[<[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-range-scope' value='table' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#b4b4b4' />
+                <format attr='mark-transparency' value='196' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19vakjj173cfgb16w597105f5cqv].[mn:Date:ok]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{EDA84563-2C0A-4ECF-90ED-D94FE06CEB1E}' />
+    </worksheet>
+    <worksheet name='Average Hours by Year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Work_Shifts_Cleaned' name='federated.19vakjj173cfgb16w597105f5cqv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19vakjj173cfgb16w597105f5cqv'>
+            <column caption='Shift_Length' datatype='real' name='[Calculation_-9086856609095380991]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(DATEDIFF(&apos;minute&apos;, [Shift Start], [Shift End], &apos;sunday&apos;))/60' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='datetime' name='[Shift End]' role='dimension' type='ordinal' />
+            <column datatype='datetime' name='[Shift Start]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_-9086856609095380991]' derivation='Avg' name='[avg:Calculation_-9086856609095380991:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_-9086856609095380991]' derivation='Sum' name='[sum:Calculation_-9086856609095380991:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19vakjj173cfgb16w597105f5cqv].[Action (MONTH(Date))]'>
+            <groupfilter function='level-members' level='[mn:Date:ok]' user:ui-action-filter='[Action1_430DA71E17E840BB9541C96D5F5FAD72]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]' filter-group='3'>
+            <groupfilter from='2019' function='range' level='[yr:Date:ok]' to='2022' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]</column>
+            <column>[federated.19vakjj173cfgb16w597105f5cqv].[Action (MONTH(Date))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' value='116' />
+            <format attr='width' field='[federated.19vakjj173cfgb16w597105f5cqv].[sum:Calculation_-9086856609095380991:qk]' value='116' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]' value='222' />
+            <format attr='height' value='141' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='text-format' field='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-format' field='[federated.19vakjj173cfgb16w597105f5cqv].[sum:Calculation_-9086856609095380991:qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]' value='true' />
+            <format attr='font-size' field='[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]' value='12' />
+            <format attr='text-format' field='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-format' field='[federated.19vakjj173cfgb16w597105f5cqv].[sum:Calculation_-9086856609095380991:qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#4e79a7</color>
+                <color>#6589b1</color>
+                <color>#7f9cbb</color>
+                <color>#9bafc5</color>
+                <color>#b8c3cf</color>
+                <color>#d9d9d9</color>
+                <color>#dec5b6</color>
+                <color>#e3b092</color>
+                <color>#e99a6c</color>
+                <color>#ee8244</color>
+                <color>#f46a1b</color>
+              </color-palette>
+            </encoding>
+            <encoding attr='color' field='[federated.19vakjj173cfgb16w597105f5cqv].[sum:Calculation_-9086856609095380991:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#4e79a7</color>
+                <color>#6589b1</color>
+                <color>#7f9cbb</color>
+                <color>#9bafc5</color>
+                <color>#b8c3cf</color>
+                <color>#d9d9d9</color>
+                <color>#dec5b6</color>
+                <color>#e3b092</color>
+                <color>#e99a6c</color>
+                <color>#ee8244</color>
+                <color>#f46a1b</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#c0c0c0' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' />
+              <text column='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' />
+              <lod column='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' />
+              <lod column='[federated.19vakjj173cfgb16w597105f5cqv].[sum:Calculation_-9086856609095380991:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878' fontsize='14'>Year of Date: </run>
+                <run bold='true' fontsize='14'><![CDATA[<[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontsize='14'>Total Hours: </run>
+                <run fontsize='14'><![CDATA[<[federated.19vakjj173cfgb16w597105f5cqv].[sum:Calculation_-9086856609095380991:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontsize='14'>Avg. Hours per Day: </run>
+                <run fontsize='14'><![CDATA[<[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='11'>Æ&#10;</run>
+                <run fontsize='11'>Æ&#10;</run>
+                <run fontsize='11'>Æ&#10;</run>
+                <run fontsize='11'><![CDATA[<[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='top' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='3.0386741161346436' />
+                <format attr='mark-color' value='#c0c0c0' />
+                <format attr='mark-transparency' value='196' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{19331975-B431-43BD-92AE-3EBDF7696C56}' />
+    </worksheet>
+    <worksheet name='Heatmap'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Shift Hours</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Work_Shifts_Cleaned' name='federated.19vakjj173cfgb16w597105f5cqv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19vakjj173cfgb16w597105f5cqv'>
+            <column caption='Shift_Length' datatype='real' name='[Calculation_-9086856609095380991]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(DATEDIFF(&apos;minute&apos;, [Shift Start], [Shift End], &apos;sunday&apos;))/60' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='datetime' name='[Shift End]' role='dimension' type='ordinal' />
+            <column datatype='datetime' name='[Shift Start]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_-9086856609095380991]' derivation='Avg' name='[avg:Calculation_-9086856609095380991:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='Quarter' name='[qr:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_-9086856609095380991]' derivation='Sum' name='[sum:Calculation_-9086856609095380991:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19vakjj173cfgb16w597105f5cqv].[Action (MONTH(Date))]'>
+            <groupfilter function='level-members' level='[mn:Date:ok]' user:ui-action-filter='[Action1_430DA71E17E840BB9541C96D5F5FAD72]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.19vakjj173cfgb16w597105f5cqv].[Action (YEAR(Date))]'>
+            <groupfilter function='level-members' level='[yr:Date:ok]' user:ui-action-filter='[Action2_F54CA2AF8028442D95BE3CE6245DB3F3]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]' filter-group='3'>
+            <groupfilter from='2019' function='range' level='[yr:Date:ok]' to='2022' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]</column>
+            <column>[federated.19vakjj173cfgb16w597105f5cqv].[Action (MONTH(Date))]</column>
+            <column>[federated.19vakjj173cfgb16w597105f5cqv].[Action (YEAR(Date))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='right' />
+            <format attr='color' data-class='subtotal' scope='rows' value='#000000' />
+            <format attr='font-size' value='11' />
+            <format attr='border-style' value='solid' />
+            <format attr='text-format' field='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.19vakjj173cfgb16w597105f5cqv].[mn:Date:ok]' value='112' />
+            <format attr='height' field='[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]' value='10' />
+            <format attr='text-align' data-class='subtotal' scope='rows' value='left' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.19vakjj173cfgb16w597105f5cqv].[qr:Date:ok]' value='false' />
+            <format attr='display' field='[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]' value='false' />
+            <format attr='display' field='[federated.19vakjj173cfgb16w597105f5cqv].[mn:Date:ok]' value='true' />
+            <format attr='text-align' value='center' />
+            <format attr='font-size' field='[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]' value='11' />
+            <format attr='font-family' field='[federated.19vakjj173cfgb16w597105f5cqv].[mn:Date:ok]' value='Arial' />
+            <format attr='font-size' field='[federated.19vakjj173cfgb16w597105f5cqv].[mn:Date:ok]' value='14' />
+            <format attr='text-format' field='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' reverse='true' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#f46a1b</color>
+                <color>#ee8244</color>
+                <color>#e99a6c</color>
+                <color>#e3b092</color>
+                <color>#dec5b6</color>
+                <color>#d9d9d9</color>
+                <color>#b8c3cf</color>
+                <color>#9bafc5</color>
+                <color>#7f9cbb</color>
+                <color>#6589b1</color>
+                <color>#4e79a7</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#f0f3fa' />
+            <format attr='border-width' data-class='subtotal' value='1' />
+            <format attr='border-style' data-class='subtotal' value='solid' />
+            <format attr='border-width' data-class='total' value='1' />
+            <format attr='border-style' data-class='total' value='solid' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='font-size' value='26' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='font-size' value='18' />
+            <format attr='color' value='#666666' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' />
+              <lod column='[federated.19vakjj173cfgb16w597105f5cqv].[sum:Calculation_-9086856609095380991:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878' fontsize='14'>Month : </run>
+                <run bold='true' fontsize='14'><![CDATA[<[federated.19vakjj173cfgb16w597105f5cqv].[mn:Date:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontsize='14'>Year:&#9; </run>
+                <run bold='true' fontsize='14'><![CDATA[<[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontsize='14'>Avg. Shift Hours: </run>
+                <run bold='true' fontsize='14'><![CDATA[<[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontsize='14'>Total Hours: </run>
+                <run fontsize='14'><![CDATA[<[federated.19vakjj173cfgb16w597105f5cqv].[sum:Calculation_-9086856609095380991:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.3073480129241943' />
+                <format attr='mark-transparency' value='196' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='highlight' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19vakjj173cfgb16w597105f5cqv].[mn:Date:ok]</rows>
+        <cols>[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{BE1BAD55-B9FD-4D07-8715-E790389D3FCD}' />
+    </worksheet>
+    <worksheet name='Hours Distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Work_Shifts_Cleaned' name='federated.19vakjj173cfgb16w597105f5cqv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19vakjj173cfgb16w597105f5cqv'>
+            <column caption='Shift_Length' datatype='real' name='[Calculation_-9086856609095380991]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(DATEDIFF(&apos;minute&apos;, [Shift Start], [Shift End], &apos;sunday&apos;))/60' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='datetime' name='[Shift End]' role='dimension' type='ordinal' />
+            <column datatype='datetime' name='[Shift Start]' role='dimension' type='ordinal' />
+            <column aggregation='None' datatype='integer' name='[Shift_Length (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[Calculation_-9086856609095380991]' peg='0' size='1.59' />
+            </column>
+            <column-instance column='[Calculation_-9086856609095380991]' derivation='Count' name='[cnt:Calculation_-9086856609095380991:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Shift_Length (bin)]' derivation='None' name='[none:Shift_Length (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19vakjj173cfgb16w597105f5cqv].[Action (MONTH(Date))]'>
+            <groupfilter function='level-members' level='[mn:Date:ok]' user:ui-action-filter='[Action2_F22E3015BD3C446793EBEF2638B01799]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.19vakjj173cfgb16w597105f5cqv].[Action (YEAR(Date))]'>
+            <groupfilter function='level-members' level='[yr:Date:ok]' user:ui-action-filter='[Action2_F54CA2AF8028442D95BE3CE6245DB3F3]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.19vakjj173cfgb16w597105f5cqv].[Action (MONTH(Date))]</column>
+            <column>[federated.19vakjj173cfgb16w597105f5cqv].[Action (YEAR(Date))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.19vakjj173cfgb16w597105f5cqv].[none:Shift_Length (bin):qk]' scope='cols' value='' />
+            <format attr='display' class='0' field='[federated.19vakjj173cfgb16w597105f5cqv].[cnt:Calculation_-9086856609095380991:qk]' scope='rows' value='true' />
+            <encoding attr='space' class='0' field='[federated.19vakjj173cfgb16w597105f5cqv].[cnt:Calculation_-9086856609095380991:qk]' field-type='quantitative' major-origin='0' major-spacing='350' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.19vakjj173cfgb16w597105f5cqv].[cnt:Calculation_-9086856609095380991:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <customized-tooltip>
+              <formatted-text />
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9890055656433105' />
+                <format attr='line-interpolation' value='step' />
+                <format attr='mark-color' value='#555555' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19vakjj173cfgb16w597105f5cqv].[cnt:Calculation_-9086856609095380991:qk]</rows>
+        <cols>[federated.19vakjj173cfgb16w597105f5cqv].[none:Shift_Length (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.19vakjj173cfgb16w597105f5cqv].[Shift_Length (bin)]</column>
+        </show-full-range>
+        <tooltip-style tooltip-mode='none' />
+      </table>
+      <simple-id uuid='{CD9F8074-D214-420B-B3CA-54F22A103930}' />
+    </worksheet>
+    <worksheet name='Maximum Shift'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Work_Shifts_Cleaned' name='federated.19vakjj173cfgb16w597105f5cqv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19vakjj173cfgb16w597105f5cqv'>
+            <column caption='Shift_Length' datatype='real' name='[Calculation_-9086856609095380991]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(DATEDIFF(&apos;minute&apos;, [Shift Start], [Shift End], &apos;sunday&apos;))/60' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='datetime' name='[Shift End]' role='dimension' type='ordinal' />
+            <column datatype='datetime' name='[Shift Start]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_-9086856609095380991]' derivation='Max' name='[max:Calculation_-9086856609095380991:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19vakjj173cfgb16w597105f5cqv].[Action (MONTH(Date))]'>
+            <groupfilter function='level-members' level='[mn:Date:ok]' user:ui-action-filter='[Action2_F22E3015BD3C446793EBEF2638B01799]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.19vakjj173cfgb16w597105f5cqv].[Action (YEAR(Date))]'>
+            <groupfilter function='level-members' level='[yr:Date:ok]' user:ui-action-filter='[Action2_F54CA2AF8028442D95BE3CE6245DB3F3]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]' filter-group='3'>
+            <groupfilter from='2019' function='range' level='[yr:Date:ok]' to='2022' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]</column>
+            <column>[federated.19vakjj173cfgb16w597105f5cqv].[Action (YEAR(Date))]</column>
+            <column>[federated.19vakjj173cfgb16w597105f5cqv].[Action (MONTH(Date))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.19vakjj173cfgb16w597105f5cqv].[max:Calculation_-9086856609095380991:qk]' value='n#,##0;-#,##0' />
+            <format attr='color' value='#f28e2b' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.19vakjj173cfgb16w597105f5cqv].[max:Calculation_-9086856609095380991:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='0' fontcolor='#f9a655' fontsize='14'>Max Shift</run>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run fontalignment='0' fontsize='24'><![CDATA[<[federated.19vakjj173cfgb16w597105f5cqv].[max:Calculation_-9086856609095380991:qk]> Hours]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <tooltip-style tooltip-mode='none' />
+      </table>
+      <simple-id uuid='{64E9F559-5BD8-4F0F-9B56-D191B4CB6767}' />
+    </worksheet>
+    <worksheet name='Median Shift'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Work_Shifts_Cleaned' name='federated.19vakjj173cfgb16w597105f5cqv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19vakjj173cfgb16w597105f5cqv'>
+            <column caption='Shift_Length' datatype='real' name='[Calculation_-9086856609095380991]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(DATEDIFF(&apos;minute&apos;, [Shift Start], [Shift End], &apos;sunday&apos;))/60' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='datetime' name='[Shift End]' role='dimension' type='ordinal' />
+            <column datatype='datetime' name='[Shift Start]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_-9086856609095380991]' derivation='Median' name='[med:Calculation_-9086856609095380991:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19vakjj173cfgb16w597105f5cqv].[Action (MONTH(Date))]'>
+            <groupfilter function='level-members' level='[mn:Date:ok]' user:ui-action-filter='[Action2_F22E3015BD3C446793EBEF2638B01799]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.19vakjj173cfgb16w597105f5cqv].[Action (YEAR(Date))]'>
+            <groupfilter function='level-members' level='[yr:Date:ok]' user:ui-action-filter='[Action2_F54CA2AF8028442D95BE3CE6245DB3F3]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]' filter-group='3'>
+            <groupfilter from='2019' function='range' level='[yr:Date:ok]' to='2022' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]</column>
+            <column>[federated.19vakjj173cfgb16w597105f5cqv].[Action (YEAR(Date))]</column>
+            <column>[federated.19vakjj173cfgb16w597105f5cqv].[Action (MONTH(Date))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.19vakjj173cfgb16w597105f5cqv].[med:Calculation_-9086856609095380991:qk]' value='N' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.19vakjj173cfgb16w597105f5cqv].[med:Calculation_-9086856609095380991:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='0' fontcolor='#898989' fontsize='14'>Median Shift</run>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run fontalignment='0' fontcolor='#666666' fontsize='24'><![CDATA[<[federated.19vakjj173cfgb16w597105f5cqv].[med:Calculation_-9086856609095380991:qk]> Hours]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <tooltip-style tooltip-mode='none' />
+      </table>
+      <simple-id uuid='{CAA4DFB0-18A0-48FC-B49D-D9B88F92D67B}' />
+    </worksheet>
+    <worksheet name='Minimum Shift'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Work_Shifts_Cleaned' name='federated.19vakjj173cfgb16w597105f5cqv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19vakjj173cfgb16w597105f5cqv'>
+            <column caption='Shift_Length' datatype='real' name='[Calculation_-9086856609095380991]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(DATEDIFF(&apos;minute&apos;, [Shift Start], [Shift End], &apos;sunday&apos;))/60' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='datetime' name='[Shift End]' role='dimension' type='ordinal' />
+            <column datatype='datetime' name='[Shift Start]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_-9086856609095380991]' derivation='Min' name='[min:Calculation_-9086856609095380991:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19vakjj173cfgb16w597105f5cqv].[Action (MONTH(Date))]'>
+            <groupfilter function='level-members' level='[mn:Date:ok]' user:ui-action-filter='[Action2_F22E3015BD3C446793EBEF2638B01799]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.19vakjj173cfgb16w597105f5cqv].[Action (YEAR(Date))]'>
+            <groupfilter function='level-members' level='[yr:Date:ok]' user:ui-action-filter='[Action2_F54CA2AF8028442D95BE3CE6245DB3F3]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]' filter-group='3'>
+            <groupfilter from='2019' function='range' level='[yr:Date:ok]' to='2022' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]</column>
+            <column>[federated.19vakjj173cfgb16w597105f5cqv].[Action (YEAR(Date))]</column>
+            <column>[federated.19vakjj173cfgb16w597105f5cqv].[Action (MONTH(Date))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.19vakjj173cfgb16w597105f5cqv].[min:Calculation_-9086856609095380991:qk]' value='n#,##0.0;-#,##0.0' />
+            <format attr='color' value='#666666' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' scope='cols' value='8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.19vakjj173cfgb16w597105f5cqv].[min:Calculation_-9086856609095380991:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='0' fontcolor='#509bdd' fontsize='14'>Min Shift</run>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run fontalignment='0' fontcolor='#4e79a7' fontsize='24'><![CDATA[<[federated.19vakjj173cfgb16w597105f5cqv].[min:Calculation_-9086856609095380991:qk]> Hours]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <tooltip-style tooltip-mode='none' />
+      </table>
+      <simple-id uuid='{4BFD2E59-1D1E-4FCE-BA50-6B9DB43632F9}' />
+    </worksheet>
+    <worksheet name='Total Hours by Year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Work_Shifts_Cleaned' name='federated.19vakjj173cfgb16w597105f5cqv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19vakjj173cfgb16w597105f5cqv'>
+            <column caption='Shift_Length' datatype='real' name='[Calculation_-9086856609095380991]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(DATEDIFF(&apos;minute&apos;, [Shift Start], [Shift End], &apos;sunday&apos;))/60' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='datetime' name='[Shift End]' role='dimension' type='ordinal' />
+            <column datatype='datetime' name='[Shift Start]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_-9086856609095380991]' derivation='Avg' name='[avg:Calculation_-9086856609095380991:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_-9086856609095380991]' derivation='Sum' name='[sum:Calculation_-9086856609095380991:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19vakjj173cfgb16w597105f5cqv].[Action (MONTH(Date))]'>
+            <groupfilter function='level-members' level='[mn:Date:ok]' user:ui-action-filter='[Action1_430DA71E17E840BB9541C96D5F5FAD72]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.19vakjj173cfgb16w597105f5cqv].[Action (YEAR(Date))]'>
+            <groupfilter function='level-members' level='[yr:Date:ok]' user:ui-action-filter='[Action2_887044B9C5A54D69AD9E7C78A247A756]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]' filter-group='3'>
+            <groupfilter from='2019' function='range' level='[yr:Date:ok]' to='2022' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]</column>
+            <column>[federated.19vakjj173cfgb16w597105f5cqv].[Action (MONTH(Date))]</column>
+            <column>[federated.19vakjj173cfgb16w597105f5cqv].[Action (YEAR(Date))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' value='116' />
+            <format attr='width' field='[federated.19vakjj173cfgb16w597105f5cqv].[sum:Calculation_-9086856609095380991:qk]' value='116' />
+            <format attr='display' class='0' field='[federated.19vakjj173cfgb16w597105f5cqv].[sum:Calculation_-9086856609095380991:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]' value='222' />
+            <format attr='height' value='141' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='text-format' field='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-format' field='[federated.19vakjj173cfgb16w597105f5cqv].[sum:Calculation_-9086856609095380991:qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]' value='true' />
+            <format attr='font-size' field='[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]' value='12' />
+            <format attr='text-format' field='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-format' field='[federated.19vakjj173cfgb16w597105f5cqv].[sum:Calculation_-9086856609095380991:qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#4e79a7</color>
+                <color>#6589b1</color>
+                <color>#7f9cbb</color>
+                <color>#9bafc5</color>
+                <color>#b8c3cf</color>
+                <color>#d9d9d9</color>
+                <color>#dec5b6</color>
+                <color>#e3b092</color>
+                <color>#e99a6c</color>
+                <color>#ee8244</color>
+                <color>#f46a1b</color>
+              </color-palette>
+            </encoding>
+            <encoding attr='color' field='[federated.19vakjj173cfgb16w597105f5cqv].[sum:Calculation_-9086856609095380991:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#4e79a7</color>
+                <color>#6589b1</color>
+                <color>#7f9cbb</color>
+                <color>#9bafc5</color>
+                <color>#b8c3cf</color>
+                <color>#d9d9d9</color>
+                <color>#dec5b6</color>
+                <color>#e3b092</color>
+                <color>#e99a6c</color>
+                <color>#ee8244</color>
+                <color>#f46a1b</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#c0c0c0' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.19vakjj173cfgb16w597105f5cqv].[sum:Calculation_-9086856609095380991:qk]' />
+              <text column='[federated.19vakjj173cfgb16w597105f5cqv].[sum:Calculation_-9086856609095380991:qk]' />
+              <lod column='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' />
+              <lod column='[federated.19vakjj173cfgb16w597105f5cqv].[sum:Calculation_-9086856609095380991:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878' fontsize='14'>Year of Date: </run>
+                <run bold='true' fontsize='14'><![CDATA[<[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontsize='14'>Total Hours: </run>
+                <run fontsize='14'><![CDATA[<[federated.19vakjj173cfgb16w597105f5cqv].[sum:Calculation_-9086856609095380991:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontsize='14'>Avg. Hours per Day: </run>
+                <run fontsize='14'><![CDATA[<[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='11'>Æ&#10;</run>
+                <run fontsize='11'>Æ&#10;</run>
+                <run fontsize='11'>Æ&#10;</run>
+                <run fontsize='11'><![CDATA[<[federated.19vakjj173cfgb16w597105f5cqv].[sum:Calculation_-9086856609095380991:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='top' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.4172928333282471' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#c0c0c0' />
+                <format attr='mark-transparency' value='196' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19vakjj173cfgb16w597105f5cqv].[sum:Calculation_-9086856609095380991:qk]</rows>
+        <cols>[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{350E72D8-1AB5-4FDE-9728-33ACCBE6905F}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='My Work Shift Hours'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>My Work Time </run>
+            <run fontcolor='#000000' fontsize='16'>2018 - 2022</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='dash-title'>
+          <format attr='font-size' value='28' />
+          <format attr='color' value='#333333' />
+          <format attr='font-family' value='Arial' />
+        </style-rule>
+        <style-rule element='dash-subtitle'>
+          <format attr='font-family' value='Arial' />
+        </style-rule>
+        <style-rule element='dash-text'>
+          <format attr='font-family' value='Arial' />
+          <format attr='vertical-align' id='dash-text_62' value='bottom' />
+        </style-rule>
+      </style>
+      <size maxheight='1169' maxwidth='1654' minheight='1169' minwidth='1654' preset-index='14' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98632' id='115' param='horz' type-v2='layout-flow' w='99032' x='484' y='684'>
+            <zone h='98632' id='92' type-v2='layout-basic' w='99032' x='484' y='684'>
+              <zone h='92202' id='63' param='vert' type-v2='layout-flow' w='99032' x='484' y='7114'>
+                <zone fixed-size='109' h='10864' id='65' is-fixed='true' param='horz' type-v2='layout-flow' w='99032' x='484' y='7114'>
+                  <zone fixed-size='180' h='9324' id='66' is-fixed='true' name='Minimum Shift' show-title='false' w='11367' x='484' y='8654'>
+                    <layout-cache fixed-size-h='70' type-h='fixed' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='185' h='9324' id='67' is-fixed='true' param='horz' type-v2='layout-flow' w='11185' x='11851' y='8654'>
+                    <zone fixed-size='180' h='9324' id='68' is-fixed='true' name='Median Shift' show-title='false' w='11185' x='11851' y='8654'>
+                      <layout-cache fixed-size-h='70' fixed-size-w='180' type-h='fixed' type-w='fixed' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                  <zone fixed-size='180' h='9324' id='69' is-fixed='true' name='Maximum Shift' show-title='false' w='11367' x='23036' y='8654'>
+                    <layout-cache fixed-size-h='70' type-h='fixed' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='349' h='9324' id='166' is-fixed='true' type-v2='empty' w='21584' x='34403' y='8654'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='916' forceUpdate='true' h='9324' id='130' is-fixed='true' type-v2='text' w='43529' x='55987' y='8654'>
+                    <formatted-text>
+                      <run fontalignment='1' fontsize='13'>I relocated to the United States (State of Florida) in 2018 and secured a position as an air conditioning technician. </run>
+                      <run fontalignment='1'>Æ&#10;</run>
+                      <run fontalignment='1' fontsize='13'>This is the extent of my dedication to providing for my family.</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                      <format attr='margin-right' value='83' />
+                      <format attr='margin-bottom' value='36' />
+                      <format attr='margin-left' value='75' />
+                    </zone-style>
+                  </zone>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin-top' value='18' />
+                    <format attr='padding-top' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='141' h='12062' id='111' is-fixed='true' param='vert' type-v2='layout-flow' w='99032' x='484' y='17978'>
+                  <zone h='12062' id='117' is-fixed='true' type-v2='layout-basic' w='99032' x='484' y='17978'>
+                    <zone h='12062' id='121' is-fixed='true' type-v2='layout-basic' w='99032' x='484' y='17978'>
+                      <zone h='12062' id='125' is-fixed='true' type-v2='layout-basic' w='99032' x='484' y='17978'>
+                        <zone h='12062' id='151' is-fixed='true' type-v2='layout-basic' w='99032' x='484' y='17978'>
+                          <zone h='12062' id='153' is-fixed='true' type-v2='layout-basic' w='99032' x='484' y='17978'>
+                            <zone h='12062' id='112' param='horz' type-v2='layout-flow' w='52479' x='484' y='17978'>
+                              <zone fixed-size='110' h='12062' id='119' is-fixed='true' type-v2='empty' w='7135' x='484' y='17978'>
+                                <zone-style>
+                                  <format attr='border-color' value='#000000' />
+                                  <format attr='border-style' value='none' />
+                                  <format attr='border-width' value='0' />
+                                  <format attr='margin' value='4' />
+                                </zone-style>
+                              </zone>
+                              <zone h='12062' id='113' name='Average Hours by Year' show-title='false' w='45344' x='7619' y='17978'>
+                                <layout-cache cell-count-w='4' type-h='cell' type-w='cell' />
+                                <zone-style>
+                                  <format attr='border-color' value='#000000' />
+                                  <format attr='border-style' value='none' />
+                                  <format attr='border-width' value='0' />
+                                  <format attr='margin' value='4' />
+                                  <format attr='margin-bottom' value='0' />
+                                  <format attr='margin-left' value='8' />
+                                </zone-style>
+                              </zone>
+                            </zone>
+                            <zone h='12062' id='154' param='horz' type-v2='layout-flow' w='46553' x='52963' y='17978'>
+                              <zone h='12062' id='155' name='Average Hours by Month' pane-specification-id='1' param='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' type-v2='color' w='46553' x='52963' y='17978'>
+                                <zone-style>
+                                  <format attr='border-color' value='#000000' />
+                                  <format attr='border-style' value='none' />
+                                  <format attr='border-width' value='0' />
+                                  <format attr='margin' value='4' />
+                                  <format attr='margin-top' value='41' />
+                                  <format attr='margin-right' value='59' />
+                                  <format attr='margin-left' value='124' />
+                                </zone-style>
+                              </zone>
+                            </zone>
+                          </zone>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+                <zone h='69276' id='90' param='horz' type-v2='layout-flow' w='99032' x='484' y='30040'>
+                  <zone fixed-size='852' h='69276' id='91' is-fixed='true' name='Heatmap' show-title='false' w='52478' x='484' y='30040'>
+                    <layout-cache type-h='cell' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                      <format attr='margin-top' value='4' />
+                      <format attr='margin-bottom' value='16' />
+                      <format attr='margin-left' value='12' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='57' h='69276' id='107' is-fixed='true' param='horz' type-v2='layout-flow' w='3446' x='52962' y='30040'>
+                    <zone h='69276' id='108' name='Average Hours by Month' show-title='false' w='3446' x='52962' y='30040'>
+                      <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                        <format attr='margin-top' value='5' />
+                        <format attr='margin-bottom' value='16' />
+                        <format attr='margin-left' value='0' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                  <zone h='69276' id='96' param='horz' type-v2='layout-flow' w='43108' x='56408' y='30040'>
+                    <zone h='69276' id='97' param='vert' type-v2='layout-flow' w='43108' x='56408' y='30040'>
+                      <zone h='69276' id='103' param='vert' type-v2='layout-flow' w='43108' x='56408' y='30040'>
+                        <zone fixed-size='250' h='21386' id='137' is-fixed='true' param='vert' type-v2='layout-flow' w='43108' x='56408' y='30040'>
+                          <zone fixed-size='223' h='21386' id='138' is-fixed='true' name='Total Hours by Year' w='43108' x='56408' y='30040'>
+                            <layout-cache minheight='165' type-h='scalable' type-w='cell' />
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                              <format attr='margin-top' value='0' />
+                              <format attr='margin-right' value='20' />
+                              <format attr='margin-bottom' value='27' />
+                              <format attr='margin-left' value='50' />
+                            </zone-style>
+                          </zone>
+                        </zone>
+                        <zone fixed-size='232' h='23945' id='104' is-fixed='true' name='Average Hours by DoW' w='43108' x='56408' y='51426'>
+                          <layout-cache minheight='159' type-h='scalable' type-w='cell' />
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                            <format attr='margin-top' value='21' />
+                            <format attr='margin-right' value='20' />
+                            <format attr='margin-bottom' value='28' />
+                            <format attr='margin-left' value='50' />
+                          </zone-style>
+                        </zone>
+                        <zone fixed-size='244' h='23945' id='106' is-fixed='true' name='Hours Distribution' w='43108' x='56408' y='75371'>
+                          <layout-cache minheight='168' minwidth='130' type-h='scalable' type-w='scalable' />
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                            <format attr='margin-top' value='33' />
+                            <format attr='margin-right' value='20' />
+                            <format attr='margin-bottom' value='17' />
+                            <format attr='margin-left' value='50' />
+                          </zone-style>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='6430' id='78' param='vert' type-v2='layout-flow' w='99032' x='484' y='684'>
+                <zone fixed-size='66' forceUpdate='true' h='6430' id='81' is-fixed='true' type-v2='text' w='99032' x='484' y='684'>
+                  <formatted-text>
+                    <run fontsize='24'>My Work Shift Hours</run>
+                    <run>Æ      </run>
+                    <run fontsize='18'>2019-2022</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='margin-top' value='6' />
+                    <format attr='margin-bottom' value='8' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='2566' id='128' type-v2='text' w='2539' x='60641' y='22840'>
+          <formatted-text>
+            <run bold='true'>MIN</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='2566' id='129' type-v2='text' w='2539' x='93833' y='22840'>
+          <formatted-text>
+            <run bold='true'>MAX</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run>My Work Time </run>
+                <run fontcolor='#000000' fontsize='16'>2018 - 2022</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='2100' minheight='2100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='172' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98632' id='171' param='vert' type-v2='layout-flow' w='99032' x='484' y='684'>
+                <zone fixed-size='66' forceUpdate='true' h='6430' id='81' type-v2='text' w='99032' x='484' y='684'>
+                  <formatted-text>
+                    <run fontsize='24'>My Work Shift Hours</run>
+                    <run>Æ      </run>
+                    <run fontsize='18'>2019-2022</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='101' h='9324' id='66' is-fixed='true' name='Minimum Shift' show-title='false' w='11367' x='484' y='8654'>
+                  <layout-cache fixed-size-h='70' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='101' h='9324' id='68' is-fixed='true' name='Median Shift' show-title='false' w='11185' x='11851' y='8654'>
+                  <layout-cache fixed-size-h='70' fixed-size-w='180' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='101' h='9324' id='69' is-fixed='true' name='Maximum Shift' show-title='false' w='11367' x='23036' y='8654'>
+                  <layout-cache fixed-size-h='70' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='916' forceUpdate='true' h='9324' id='130' type-v2='text' w='43529' x='55987' y='8654'>
+                  <formatted-text>
+                    <run fontalignment='1' fontsize='13'>I relocated to the United States (State of Florida) in 2018 and secured a position as an air conditioning technician. </run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run fontalignment='1' fontsize='13'>This is the extent of my dedication to providing for my family.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='137' h='12062' id='113' is-fixed='true' name='Average Hours by Year' show-title='false' w='45344' x='7619' y='17978'>
+                  <layout-cache cell-count-w='4' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='2566' id='128' type-v2='text' w='2539' x='60641' y='22840'>
+                  <formatted-text>
+                    <run bold='true'>MIN</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='2566' id='129' type-v2='text' w='2539' x='93833' y='22840'>
+                  <formatted-text>
+                    <run bold='true'>MAX</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='69276' id='91' is-fixed='true' name='Heatmap' show-title='false' w='52478' x='484' y='30040'>
+                  <layout-cache cell-count-h='12' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='69276' id='108' is-fixed='true' name='Average Hours by Month' show-title='false' w='3446' x='52962' y='30040'>
+                  <layout-cache cell-count-h='12' cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12062' id='155' name='Average Hours by Month' pane-specification-id='1' param='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' type-v2='color' w='46553' x='52963' y='17978'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='223' h='21386' id='138' is-fixed='true' name='Total Hours by Year' w='43108' x='56408' y='30040'>
+                  <layout-cache minheight='165' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='231' h='23945' id='104' is-fixed='true' name='Average Hours by DoW' w='43108' x='56408' y='51426'>
+                  <layout-cache minheight='159' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='230' h='23945' id='106' is-fixed='true' name='Hours Distribution' w='43108' x='56408' y='75371'>
+                  <layout-cache minheight='168' minwidth='130' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{77AF4B80-348D-40E1-9D4F-5EFA0B65DAC6}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='My Work Shift Hours'>
+      <viewpoints>
+        <viewpoint name='Average Hours by DoW'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Average Hours by Month'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.19vakjj173cfgb16w597105f5cqv].[usr:Max_Min (copy)_8559091156954435584:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Average Hours by Year'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.19vakjj173cfgb16w597105f5cqv].[usr:Calculation_6540352623231541249:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Heatmap'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Hours Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Maximum Shift' />
+        <viewpoint name='Median Shift' />
+        <viewpoint name='Minimum Shift' />
+        <viewpoint name='Total Hours by Year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{1B1D5F44-DF43-4244-8EB0-66501BF48DB9}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Average Hours by DoW'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19vakjj173cfgb16w597105f5cqv].[usr:Calculation_6540352623231541249:nk]</field>
+            <field>[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{692E50AA-EB2E-48C2-979D-F2B16895F87E}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Average Hours by Month'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]</field>
+            <field>[federated.19vakjj173cfgb16w597105f5cqv].[usr:Calculation_6540352623231541249:nk:4]</field>
+            <field>[federated.19vakjj173cfgb16w597105f5cqv].[usr:Max_Min (copy)_8559091156954435584:nk]</field>
+            <field>[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D284891F-A68F-4ADE-AE27-135FF60A8E3E}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Average Hours by Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]</field>
+            <field>[federated.19vakjj173cfgb16w597105f5cqv].[usr:Calculation_6540352623231541249:nk]</field>
+            <field>[federated.19vakjj173cfgb16w597105f5cqv].[usr:Max_Min (copy)_8559091156954435584:nk:2]</field>
+            <field>[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{DC79332C-821E-4CFC-8D9D-C4EE1346EE82}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Heatmap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19vakjj173cfgb16w597105f5cqv].[avg:Calculation_-9086856609095380991:qk]</field>
+            <field>[federated.19vakjj173cfgb16w597105f5cqv].[none:Calculation_-9086856609095557120:nk]</field>
+            <field>[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F32A3BEB-6197-456C-941F-AF236BCE565F}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Hours Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{566049B3-4D26-43ED-B42D-25F00BB8BD95}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Maximum Shift'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F1AF5635-1DCF-4EB5-83B1-A223A9E71FA7}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Median Shift'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FB019251-0ED6-4F96-BCDF-C144FE6A182B}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Minimum Shift'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{09BBB863-4040-4368-A502-1E6A0B29A739}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Total Hours by Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.19vakjj173cfgb16w597105f5cqv].[sum:Calculation_-9086856609095380991:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19vakjj173cfgb16w597105f5cqv].[sum:Calculation_-9086856609095380991:qk]</field>
+            <field>[federated.19vakjj173cfgb16w597105f5cqv].[usr:Calculation_6540352623231541249:nk]</field>
+            <field>[federated.19vakjj173cfgb16w597105f5cqv].[usr:Max_Min (copy)_8559091156954435584:nk:2]</field>
+            <field>[federated.19vakjj173cfgb16w597105f5cqv].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6032EB88-52F3-41AD-A1F1-CD28F42338DA}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='My Work Shift Hours' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
